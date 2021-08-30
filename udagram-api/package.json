@@ -12,8 +12,10 @@
     "clean": "rm -rf www/ || true",
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "clean:windows": "rmdir /s /q www && del build.zip",
-    "build:windows": "npm run clean:windows && tsc && npm run copy:windows && powershell Compress-Archive www/* build.zip",
+    "build:windows": "npm run clean:windows && tsc && npm run copy:windows && npm run zip:windows && npm run deploy:windows",
     "copy:windows":"copy .npmrc \"www/.npmrc\" && copy package.json \"www/package.json\" && xcopy /E /I \"src/migrations\" \"www/migrations\"",
+    "zip:windows":"cd scripts && zip.bat",
+    "deploy:windows":"eb deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
