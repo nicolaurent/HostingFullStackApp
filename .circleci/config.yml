@@ -4,6 +4,11 @@ version: 2.1
 orbs:
   node: circleci/node@4.1
 
+general:
+  branches:
+    only:
+     - main # only main branch is built and deployed
+
 jobs:
   build:
     docker:
