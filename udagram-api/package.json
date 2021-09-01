@@ -10,13 +10,13 @@
     "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
     "prod": "tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
-    "clean:windows": "if exist www rd /s /q www && del build.zip",
+    "build": "npm run clean && tsc && cp -rf src/migrations www/migrations && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:windows": "if exist www rd /s /q www",
     "build:windows": "npm run clean:windows && tsc && npm run copy:windows && npm run zip:windows",
     "copy:windows":"copy .npmrc \"www/.npmrc\" && copy package.json \"www/package.json\" && xcopy /E /I \"src/migrations\" \"www/migrations\"",
     "zip:windows":"cd scripts && zip.bat",
-    "deploy:windows":"eb deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy":"eb deploy"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
