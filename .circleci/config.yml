@@ -4,13 +4,11 @@ version: 2.1
 orbs:
   node: circleci/node@4.1
 
-general:
-  branches:
-    only:
-     - main # only main branch is built and deployed
-
 jobs:
   build:
+    branches:
+      only: 
+        - main # only main branch is built and deployed
     docker:
       # the base image can run most needed actions with orbs.
       - image: "cimg/base:stable"
