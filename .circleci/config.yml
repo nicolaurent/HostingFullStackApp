@@ -6,9 +6,6 @@ orbs:
 
 jobs:
   build:
-    branches:
-      only: 
-        - main # only main branch is built and deployed
     docker:
       # the base image can run most needed actions with orbs.
       - image: "cimg/base:stable"
@@ -33,3 +30,11 @@ jobs:
           command: |
             npm run backend:build
 
+workflows:
+  udagram:
+    jobs:
+      - build:
+        filters:
+          branches:
+            only:
+                - main 
