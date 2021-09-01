@@ -31,10 +31,11 @@ jobs:
             npm run backend:build
 
 workflows:
-  udagram:
+  version: 2
+  build:
     jobs:
       - build:
-        filters:
-          branches:
-            only:
-                - main 
+          filters:
+            branches:
+              only:
+                  - main 
