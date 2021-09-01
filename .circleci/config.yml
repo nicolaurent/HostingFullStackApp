@@ -31,7 +31,7 @@ jobs:
             npm run backend:build
 
 workflows:
-  build:
+  udagram:
     jobs:
       - build:
           filters:
