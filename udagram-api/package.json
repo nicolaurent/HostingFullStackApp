@@ -16,7 +16,7 @@
     "build:windows": "npm run clean:windows && tsc && npm run copy:windows && npm run zip:windows",
     "copy:windows":"copy .npmrc \"www/.npmrc\" && copy package.json \"www/package.json\" && xcopy /E /I \"src/migrations\" \"www/migrations\"",
     "zip:windows":"cd scripts && zip.bat",
-    "deploy":"eb deploy"
+    "deploy":"chmod +x scripts/deploy.sh && scripts/deploy.sh"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
