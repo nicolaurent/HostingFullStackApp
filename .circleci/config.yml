@@ -54,11 +54,11 @@ jobs:
 workflows:
   udagram:
     jobs: # jobs are running in parallel
-      #- frontend_build_deploy:
-      #    filters:
-      #      branches:
-      #        only:
-      #            - main # build only for the main branch
+      - frontend_build_deploy:
+          filters:
+            branches:
+              only:
+                  - main # build only for the main branch
       - backend_build_deploy:
           filters:
             branches:
