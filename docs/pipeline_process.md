@@ -16,3 +16,7 @@ The pipeline is split into 2 processes: frontend and backend. Both processes are
 - Test
 - Deploy
 
+##  Pipeline Architecture
+
+![pipeline_process](https://user-images.githubusercontent.com/14368846/131862201-4a459869-ada0-46fc-b96e-62c05494301e.JPG)
+
