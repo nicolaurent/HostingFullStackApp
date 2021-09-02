@@ -10,17 +10,6 @@ Application link: http://randomudagram123.s3-website-ap-southeast-1.amazonaws.co
 - upload image and caption
 - view uploaded image and caption
 
-## Project Tech Stack
-Database: PostgreSQL
-
-Server API: Node.js
-
-Frontend: Angular
-
-Cloud Platform: AWS (Amazon Web Service)
-
-CI/CD Pipeline: CircleCI
-
 ## Project Setup
 
 Clone the project - git clone https://github.com/nicolaurent/HostingFullStackApp.git
@@ -41,27 +30,6 @@ Install dependencies in `udagram-api` directory
 AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
 
 EB CLI: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html
-
-## System Architect Overview
-
-![System Design](https://user-images.githubusercontent.com/14368846/131787835-f774d3e7-6327-4b97-982d-7bf70d12acdb.JPG)
-
-## Pipeline Process
-
-The pipeline is split into 2 processes: frontend and backend. Both processes are running in parallel to save build and deployment time.
-
-#### Frontend Pipeline
-- Install dependencies
-- Setup AWS CLI
-- Build
-- Deploy
-
-#### Backend Pipeline
-- Install dependencies
-- Setup EB CLI
-- Build
-- Test
-- Deploy
 
 ## Screenshots
 Below are the screenshots from the latest built
