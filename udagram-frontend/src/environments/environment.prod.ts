@@ -5,7 +5,8 @@
 export const environment = {
   production: true,
   appName: "Udagram",
-  apiHost: process.env.API_HOST
+  // not possible to set env variable in S3 since it is a static object storage 
+  apiHost: 'http://Udagram-env.eba-jpxypp4z.ap-southeast-1.elasticbeanstalk.com/api/v0'
 };
 
 /*
