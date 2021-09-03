@@ -34,7 +34,7 @@ EB CLI: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-w
 ## Screenshots
 Below are the screenshots from the latest built
 
-### RDS - Database
+### RDS - Database 
 
 ![RDS](https://user-images.githubusercontent.com/14368846/131946924-993dd65f-65b4-488a-8867-cf5a5b1b5465.JPG)
 
@@ -48,7 +48,7 @@ Below are the screenshots from the latest built
 
 ### CircleCI
 
-#### Dashboard
+#### Dashboard [![nicolaurent](https://circleci.com/gh/nicolaurent/HostingFullStackApp.svg?style=svg)](https://app.circleci.com/pipelines/github/nicolaurent/HostingFullStackApp)
 
 ![CircleCI Dashboard](https://user-images.githubusercontent.com/14368846/131947472-58d4fa34-e14f-4064-9f18-23a068105849.JPG)
 
@@ -60,6 +60,6 @@ Below are the screenshots from the latest built
 
 ![Frontend_build_deploy](https://user-images.githubusercontent.com/14368846/131947500-82653391-2511-4823-848a-5e506feb2b84.png)
 
-#### Backend_build_deploy
+#### Backend_build_deploy 
 
 ![Backend_build_deploy](https://user-images.githubusercontent.com/14368846/131947514-d0afdcd6-d259-43d4-9c72-b3d0685ee35e.png)
